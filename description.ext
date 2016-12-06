@@ -1,0 +1,50 @@
+/*
+
+Description.ext for kFramework
+
+Author: Kieran Collier
+
+*/
+
+author = "Kieran Collier";
+onLoadName = "TBD";
+onLoadMission = "TBD";
+onLoadIntro = "TBD";
+onLoadMissionTime = 1;
+loadscreen = "Assets\loading.jpg";
+
+
+
+respawnbutton = 0;
+respawnOnStart = 0;
+enableDebugConsole = 1;
+
+// CHVD Stuff
+#include "CHVD\dialog.hpp"
+
+class CfgFunctions
+{
+    #include "CHVD\CfgFunctions.hpp"
+};
+
+// Parameters
+
+class Params
+{
+	class TimeOfDay0
+	{
+		title = "Time of Day:";
+		values[] = {8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,1,2,3,4,5,6,7};
+		texts[] = {"0000", "0100", "0200", "0300", "0400", "0500", "0600",  "0700", "0800", "0900", "1000", "1100", "1200", "1300", "1400", "1500", "1600", "1700", "1800", "1900", "2000", "2100", "2200", "2300"};
+		default = 19;
+	};
+
+	class Civilians1
+	{
+		title = "Civilians:";
+		values[] = {1,0};
+		texts[] = {"Yes", "No"};
+		default = 2;
+	};
+
+};
